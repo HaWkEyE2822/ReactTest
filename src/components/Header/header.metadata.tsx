@@ -1,4 +1,4 @@
-import { sendIcon } from '../../atoms/icons/sendIcon';
+import { SendIcon } from '../../atoms/icons/sendIcon';
 
 interface IButtonProps {
     id: string | number,
@@ -10,7 +10,7 @@ const HEADER_BUTTONS: Array<IButtonProps> = [
     {
         id: 'sendIcon',
         type: "svg",
-        icon: sendIcon
+        icon: SendIcon
     }
 ]
 
