@@ -1,10 +1,9 @@
 .avatar_container {
-    margin-right: 3rem;
+    margin-right: 1.5rem;
 }
 
 .avatar_container__pic {
     border-radius: 50%;
-    border: 2px solid lightcoral;
     padding: 2px;
 
     img {
@@ -15,6 +14,6 @@
 .avatar_container__text {
     color: #fff;
     text-align: center;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    font-size: 1rem;
 }

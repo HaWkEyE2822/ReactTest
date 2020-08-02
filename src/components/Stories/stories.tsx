@@ -6,7 +6,7 @@ const Stories = () => {
     return (
         <div className="stories_container">
             {PROFILES.map(profile => {
-                return <Avatar width="10rem" height="10rem" { ...profile }/>
+                return <Avatar width="6rem" height="6rem" { ...profile }/>
             })}
         </div>
     );

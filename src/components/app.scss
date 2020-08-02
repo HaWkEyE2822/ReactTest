@@ -3,7 +3,14 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+    font-family: -apple-system, 'Roboto', BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 @import '../atoms/atoms.scss';
 @import '../components/Header/header.scss';
 @import '../components/Stories/stories.scss';
 @import '../components/Footer/footer.scss';
+@import '../common/modal.scss';
+@import '../components/Feeds/feeds.scss';

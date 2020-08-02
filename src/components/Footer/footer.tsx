@@ -6,8 +6,13 @@ import { HeartIcon } from '../../atoms/icons/heartIcon';
 import { PROFILES } from '../Stories/stories_metadata';
 import Avatar from '../../atoms/avatar';
 
-const width: string = "5rem";
-const height: string = "5rem";
+const width: string = "2.4rem";
+const height: string = "2.4rem";
+
+const firstProfile = {
+    id: PROFILES[0].id,
+    pic: PROFILES[0].pic
+}
 
 const Footer  = () => {
     return (
@@ -16,7 +21,7 @@ const Footer  = () => {
             <SearchIcon width={width} height={height} />
             <AddIcon width={width} height={height} />
             <HeartIcon width={width} height={height} />
-            {<Avatar width={width} height={height} { ...PROFILES[0] } /> }
+            {<Avatar border={false} width={width} height={height} { ...firstProfile } /> }
         </div>
     );
 }

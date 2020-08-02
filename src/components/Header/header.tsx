@@ -7,17 +7,17 @@ const Header = () => {
     return (
         <div className="header_container">
             <div>
-                <CameraIcon width="6rem" height="6rem"/>
+                <CameraIcon width="2.8rem" height="2.8rem"/>
             </div>
             <div style={{
                 flex: 1,
-                marginLeft: '12px',
-                height: '6rem'
+                marginLeft: '1.2rem',
+                height: '2.8rem'
             }}>
                 <img height="100%" src={InstagramLogoText}/>
             </div>
             <div>
-                <SendIcon width="6rem" height="6rem"/>
+                <SendIcon width="2.8rem" height="2.8rem"/>
             </div>
         </div>
 

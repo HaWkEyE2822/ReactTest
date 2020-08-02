@@ -1,0 +1,29 @@
+.modal-wrapper {
+    position: fixed;
+    z-index: 500;
+    width: 70%;
+    box-shadow: 1px 1px 1px black;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    border-radius: 3px;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+
+.back-drop {
+    background-color: rgba(48, 49, 48, 0.42);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+    top: 0;
+    left: 0
+}

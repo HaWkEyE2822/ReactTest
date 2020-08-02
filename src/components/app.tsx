@@ -8,7 +8,7 @@ import './app.scss';
 const App = () => (
     <div>
         <Header />
-        <div style={{ background: 'black', padding: '0px 12px' }}>
+        <div style={{ background: 'black', paddingTop: '6rem' }}>
             <Stories />
             <Feeds />
         </div>
