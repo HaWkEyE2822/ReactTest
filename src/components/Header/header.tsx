@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { SendIcon } from '../../atoms/icons/sendIcon';
+import { SendIcon, CameraIcon } from '../../atoms/icons/outlined/icons-outlined';
 import InstagramLogoText from '../../assets/images/instagram-logo-text.png';
-import { CameraIcon } from '../../atoms/icons/cameraIcon';
 
 const Header = () => {
     return (

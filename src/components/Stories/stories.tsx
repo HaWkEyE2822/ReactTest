@@ -5,8 +5,8 @@ import Avatar from '../../atoms/avatar';
 const Stories = () => {
     return (
         <div className="stories_container">
-            {PROFILES.map(profile => {
-                return <Avatar width="6rem" height="6rem" { ...profile }/>
+            {PROFILES.map((profile, idx) => {
+                return <Avatar key={idx} width="6rem" height="6rem" { ...profile }/>
             })}
         </div>
     );

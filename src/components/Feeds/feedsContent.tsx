@@ -5,8 +5,8 @@ const FeedsContent = ({ content }: any) => {
     return (
         <div>
             {type === 'image' ? <div>
-                {images.map(image => (
-                <div className="content_image">
+                {images.map((image, idx) => (
+                <div key={idx} className="content_image">
                     <img width="100%" height="100%" src={image} alt={"image"}/>
                 </div>
             ))}

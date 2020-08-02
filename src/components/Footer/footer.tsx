@@ -1,8 +1,5 @@
 import * as React from 'react';
-import { HomeIcon } from '../../atoms/icons/homeIcon';
-import { SearchIcon } from '../../atoms/icons/searchIcon';
-import { AddIcon } from '../../atoms/icons/AddIcon';
-import { HeartIcon } from '../../atoms/icons/heartIcon';
+import { HomeIcon, SearchIcon, AddIcon, HeartIcon } from '../../atoms/icons/outlined/icons-outlined';
 import { PROFILES } from '../Stories/stories_metadata';
 import Avatar from '../../atoms/avatar';
 

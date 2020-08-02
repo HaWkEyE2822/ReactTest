@@ -4,7 +4,7 @@ import * as React from 'react';
 const { useState } = React;
 
 import Modal from '../../common/Modal';
-import { MoreIcon } from '../../atoms/icons/moreIcon';
+import { MoreIcon } from '../../atoms/icons/outlined/icons-outlined';
 
 const MoreOptionsModal = () => {
     const [ isShowing, setIsShowing ] = useState(false);

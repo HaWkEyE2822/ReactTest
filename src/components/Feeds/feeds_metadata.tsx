@@ -12,7 +12,8 @@ export interface IFeedsData {
 export interface ICommnets {
     pic: string,
     text: string,
-    userID: string | number
+    userID: string | number,
+    username: string
 }
 
 const FEEDS_DATA = [
@@ -33,7 +34,8 @@ const FEEDS_DATA = [
             {
                 pic: "https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/s150x150/67642022_738267743299072_7454043070808457216_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&_nc_ohc=xvcyjK1BhNAAX8-rYlE&oh=86d46be9041988abe752290f5064d956&oe=5F4E24FF",
                 text: "Very Awesome!",
-                userID: 1
+                userID: 1,
+                username: "hrithikroshan"
             }
         ]
     },
@@ -54,7 +56,8 @@ const FEEDS_DATA = [
             {
                 pic: "https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/s150x150/95171127_2580690715582727_4871067932475523072_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&_nc_ohc=hp8k0rSa_AIAX8fffYi&oh=8bd61869e5fc9fe9410a6c47281a4bdb&oe=5F51681B",
                 text: "Very Coool!!!",
-                userID: 1
+                userID: 1,
+                username: "shraddakapoor"
             }
         ]
     }
