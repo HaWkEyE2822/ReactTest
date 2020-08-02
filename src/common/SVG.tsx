@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-const SVG = (props: any) => {
-    // return (
-        // props.children.map(child => {
-            return React.cloneElement(props.children, {
-                width: props.width || "24",
-                height: props.height || "24"
-            })
-        // })
-    // );
+interface ISVG {
+    children?: any,
+    width?: string,
+    height?: string
 }
+
+const SVG = ({ children, width = "24", height = "24"}: ISVG) => React.cloneElement(children, {
+                width,
+                height
+            })
 
 export default SVG;

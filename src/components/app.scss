@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import '../atoms/atoms.scss';
+@import '../components/Header/header.scss';
+@import '../components/Stories/stories.scss';
+@import '../components/Footer/footer.scss';

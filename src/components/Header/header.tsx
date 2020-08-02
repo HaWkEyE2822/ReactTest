@@ -1,17 +1,23 @@
 import * as React from 'react';
 import { SendIcon } from '../../atoms/icons/sendIcon';
+import InstagramLogoText from '../../assets/images/instagram-logo-text.png';
+import { CameraIcon } from '../../atoms/icons/cameraIcon';
 
 const Header = () => {
     return (
-        <div>
+        <div className="header_container">
             <div>
-                Camera
+                <CameraIcon width="6rem" height="6rem"/>
+            </div>
+            <div style={{
+                flex: 1,
+                marginLeft: '12px',
+                height: '6rem'
+            }}>
+                <img height="100%" src={InstagramLogoText}/>
             </div>
             <div>
-                Instagram
-            </div>
-            <div>
-                <SendIcon />
+                <SendIcon width="6rem" height="6rem"/>
             </div>
         </div>
 
