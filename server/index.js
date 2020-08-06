@@ -1,15 +1,23 @@
-const app = require('express')();
+const path = require('path');
+const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-app.use(cors());
-app.use(bodyParser());
+const home = require('./routes/home');
 
-const router = app.router();
-router.get('/home', (req, res) => {
-    res.send('hello')
-});
+app.use(cors());
+
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+app.use(express.static(path.resolve(__dirname, '../client/build')))
+
+app.use(bodyParser.json());
+
+app.use('/', home);
 
 const PORT = process.env.PORT || 9001;
 
