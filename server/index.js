@@ -21,10 +21,23 @@ app.use('/', home);
 
 const PORT = process.env.PORT || 9001;
 
+
+const db = mongoose.connection;
+
+mongoose.connect('mongodb://localhost:27017/outstagram',  {useNewUrlParser: true} );
+
+db.on('error', (err) => {
+    console.error.bind(console, `Connection-failed ${err}`);
+});
+
+db.once('open', () => {
+    console.info('Connect to DB!');
+})
+
 app.listen(PORT, (err) => {
     if(!err) {
         console.log(`App listening on port ${PORT}`);
     } else {
         console.error(err);
     }
-})
+});
